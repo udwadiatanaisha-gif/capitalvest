@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 120" width="100%" height="100%">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCD34D" />
+      <stop offset="35%" stop-color="#F59E0B" />
+      <stop offset="70%" stop-color="#D97706" />
+      <stop offset="100%" stop-color="#B45309" />
+    </linearGradient>
+    <linearGradient id="navyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E3A8A" />
+      <stop offset="100%" stop-color="#0F2744" />
+    </linearGradient>
+    <filter id="subtleGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#b45309" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Crest Mark -->
+  <g transform="translate(10, 10)">
+    <!-- Outer Shield / Vault Polygon -->
+    <path d="M 50 4 L 92 24 L 92 68 Q 92 94 50 102 Q 8 94 8 68 L 8 24 Z" 
+          fill="url(#navyGrad)" 
+          stroke="url(#goldGrad)" 
+          stroke-width="3" 
+          filter="url(#subtleGlow)"/>
+    
+    <!-- Inner Accent Frame -->
+    <path d="M 50 14 L 84 30 L 84 66 Q 84 86 50 93 Q 16 86 16 66 L 16 30 Z" 
+          fill="none" 
+          stroke="#FCD34D" 
+          stroke-opacity="0.4" 
+          stroke-width="1.2" 
+          stroke-dasharray="3,2"/>
+          
+    <!-- Stylized Monogram CV Geometry: Ascending Chevron + Diamond -->
+    <!-- 'C' Arc -->
+    <path d="M 64 36 C 40 32 30 46 30 58 C 30 70 42 80 64 76" 
+          fill="none" 
+          stroke="url(#goldGrad)" 
+          stroke-width="4.5" 
+          stroke-linecap="round"/>
+          
+    <!-- 'V' Dynamic Chevron overlapping -->
+    <path d="M 44 42 L 56 74 L 72 38" 
+          fill="none" 
+          stroke="#FFFFFF" 
+          stroke-width="3.5" 
+          stroke-linecap="round" 
+          stroke-linejoin="round"/>
+          
+    <!-- Polaris Generational Star at Top -->
+    <polygon points="50,18 52.5,25 59,25 54,29 56,35 50,31 44,35 46,29 41,25 47.5,25" fill="url(#goldGrad)" />
+  </g>
+
+  <!-- Typography: CAPITALVEST -->
+  <text x="130" y="58" 
+        font-family="'Cinzel', 'Playfair Display', 'Times New Roman', serif" 
+        font-size="34" 
+        font-weight="700" 
+        letter-spacing="5" 
+        fill="#0F2744">
+    CAPITAL<tspan fill="url(#goldGrad)">VEST</tspan>
+  </text>
+
+  <!-- Decorative Divider Line -->
+  <line x1="130" y1="72" x2="490" y2="72" stroke="url(#goldGrad)" stroke-width="1.5" stroke-linecap="round" />
+  <circle cx="310" cy="72" r="3" fill="#D97706" />
+
+  <!-- Subtitle: BUILDING WEALTH. SECURING GENERATIONS. -->
+  <text x="130" y="93" 
+        font-family="'Plus Jakarta Sans', system-ui, -apple-system, sans-serif" 
+        font-size="11.5" 
+        font-weight="600" 
+        letter-spacing="3" 
+        fill="#475569">
+    BUILDING WEALTH. SECURING GENERATIONS.
+  </text>
+</svg>

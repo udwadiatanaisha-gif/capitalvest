@@ -1,0 +1,6 @@
+{
+  "name": "CapitalVest Wealth Management (India)",
+  "description": "CAPITALVEST: Building Wealth. Securing Generations. Lead Advisor: Tanaisha Udwadia, CFA. Enterprise wealth management platform featuring Gemini-powered Indian Advisory AI, portfolio analytics, financial goals, risk assessments, protection gap audits, Excel synchronization, and PDF reports.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
